@@ -7,7 +7,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.Practice.Employees.Employee;
+import pojo.practice.employees.Employee;
 
 import java.util.List;
 
@@ -28,33 +28,33 @@ public class Departments_test {
         reset();
     }
 
-    @DisplayName("Testing/regions/{employee_id}")
+    @DisplayName("Testing/departments/{employee_id}")
     @Test
-    public void testThirdRegionIsAsia(){
+    public void testThirdDepartmentIsMarketing(){
 
         given()
-                .pathParam("employee_id",104)
+                .pathParam("department_id",20)
                 .log().all().
         when()
-                .get("/employees/{employee_id}").
+                .get("/departments/{department_id}").
         then()
                 .log().all()
                 .assertThat()
                 .statusCode(is(200))
                 .contentType(ContentType.JSON)
-                .body("first_name",is("Bruce"));
+                .body("department_name",is("Marketing"));
     }
 
-    @DisplayName("Save Get/employees/{employee_id} response as POJO ")
+    @DisplayName("Save Get/department/{department_id} response as POJO ")
     @Test
     public void testSingleRegionToPOJO(){
 
         Response response=
         given()
-                .pathParam("employee_id",104)
+                .pathParam("department_id",20)
                 .log().all().
         when()
-                .get("/employees/{employee_id}")
+                .get("/departments/{department_id}")
                 .prettyPeek();
         JsonPath jp=response.jsonPath();
 
@@ -67,13 +67,13 @@ public class Departments_test {
         System.out.println("==============================");
 
         JsonPath jp1=given()
-                .pathParam("employee_id",104)
+                .pathParam("department_id",104)
                 .log().all().
                         when()
-                .get("/employees/{employee_id}")
+                .get("/department/{department_id}")
                 .prettyPeek().jsonPath();
 
-        Employee e5=jp1.getObject("",Employee.class);
+        Employee e5=jp1.getObject("",Departments.class);
         System.out.println("e5 = " + e5);
 
 

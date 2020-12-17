@@ -1,4 +1,4 @@
-package pojo.Practice.Employees;
+package pojo.practice.employees;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

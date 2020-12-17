@@ -1,4 +1,4 @@
-package pojo.Practice.Regions;
+package pojo.practice.regions;
 
 // we want  to ignore any  extra key that  json has
 // other than region_id ,  region_name
