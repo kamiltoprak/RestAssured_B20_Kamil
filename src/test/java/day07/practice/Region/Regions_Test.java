@@ -10,7 +10,7 @@ import java.util.List;
 import static io.restassured.RestAssured.* ;
 import static org.hamcrest.Matchers.* ;
 
-public class HR_ORDS_Test {
+public class Regions_Test {
 
     // http://54.90.101.103:1000/ords/hr/regions/3
 
