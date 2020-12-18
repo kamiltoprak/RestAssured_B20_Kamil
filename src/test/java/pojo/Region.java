@@ -5,6 +5,7 @@ package pojo;
 // anything unknown to  this pojo class  should  be ignored
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Region {

@@ -1,4 +1,4 @@
-package day07.practice.Departments;
+package day07.practice.departments;
 
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.practice.employees.Employee;
+import pojo.practice.departments.Department;
 
 import java.util.List;
 
@@ -58,23 +58,23 @@ public class Departments_test {
                 .prettyPeek();
         JsonPath jp=response.jsonPath();
 
-        Employee e3=jp.getObject("", Employee.class);
-        System.out.println("r3 = " + e3);
+        Department d3=jp.getObject("", Department.class);
+        System.out.println("d3 = " + d3);
 
-        Employee e4=response.as(Employee.class);
-        System.out.println("r4 = " + e4);
+        Department d4=response.as(Department.class);
+        System.out.println("r4 = " + d4);
 
         System.out.println("==============================");
 
         JsonPath jp1=given()
-                .pathParam("department_id",104)
+                .pathParam("department_id",20)
                 .log().all().
                         when()
-                .get("/department/{department_id}")
+                .get("/departments/{department_id}")
                 .prettyPeek().jsonPath();
 
-        Employee e5=jp1.getObject("",Departments.class);
-        System.out.println("e5 = " + e5);
+        Department d5=jp1.getObject("", Department.class);
+        System.out.println("e5 = " + d5);
 
 
     }
@@ -83,17 +83,17 @@ public class Departments_test {
     @DisplayName("Save Get/employees response as list of  POJO ")
     @Test
     public void testAllRegionToListOfPOJO(){
-        Response response=get("/employees");
+        Response response=get("/departments");
         JsonPath jp=response.jsonPath();
-        List<Employee> allEmployee=jp.getList("items",Employee.class);
-        allEmployee.forEach(System.out::println);
+        List<Department> allDepartments=jp.getList("items",Department.class);
+        allDepartments.forEach(System.out::println);
         // with out using list
         // use jsonpath to get
 
         System.out.println("================");
-        JsonPath jp1=get("/employees").jsonPath();
-        List<Employee> allEmployee1=jp.getList("items",Employee.class);
-        allEmployee.forEach(System.out::println);
+        JsonPath jp1=get("/departments").jsonPath();
+        List<Department> allDepartments1=jp.getList("items",Department.class);
+        allDepartments1.forEach(System.out::println);
 
     }
 

@@ -1,4 +1,4 @@
-package day07.practice.Region;
+package day07.practice.regions;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

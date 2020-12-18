@@ -1,5 +1,6 @@
 package day07;
 
+import TestBase.HR_ORDS_TestBase;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
@@ -9,19 +10,9 @@ import java.util.List;
 import static io.restassured.RestAssured.* ;
 import static org.hamcrest.Matchers.* ;
 
-public class HR_ORDS_Test {
+public class HR_ORDS_Test extends HR_ORDS_TestBase {
 
-    // http://54.90.101.103:1000/ords/hr/regions/3
 
-    @BeforeAll
-    public static void setUp(){
-        baseURI = "http://54.90.101.103:1000";
-        basePath = "/ords/hr" ;
-    }
-    @AfterAll
-    public static void tearDown(){
-        reset();
-    }
 
     @DisplayName("Testing/regions/{region_id}")
     @Test
