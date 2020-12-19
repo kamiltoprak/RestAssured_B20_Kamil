@@ -1,15 +1,12 @@
-package day07.practice.countries;
+package day07.warmUpTask.countries;
 
 
-import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.practice.countries.Country;
-import pojo.practice.departments.Department;
+import pojo.warmUpTask.countries.Country;
 
 import java.util.List;
 

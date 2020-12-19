@@ -1,10 +1,10 @@
-package day07.practice.regions;
+package day07.warmUpTask.regions;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
 import io.restassured.http.ContentType;
-import pojo.practice.regions.Region;
+import pojo.warmUpTask.regions.Region;
 
 import java.util.List;
 import static io.restassured.RestAssured.* ;

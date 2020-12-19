@@ -1,4 +1,4 @@
-package pojo.practice.departments;
+package pojo.warmUpTask.departments;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

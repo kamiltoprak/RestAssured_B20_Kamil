@@ -1,4 +1,4 @@
-package pojo.practice.locations;
+package pojo.warmUpTask.locations;
 
 public class Location {
 

@@ -5,7 +5,7 @@ import TestBase.HR_ORDS_TestBase;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.practice.countries.Country;
+import pojo.warmUpTask.countries.Country;
 
 import java.util.List;
 
@@ -40,13 +40,8 @@ public class Countries_test extends HR_ORDS_TestBase {
     public void testAllCountriesResponseToListOfPOJO(){
 
         Response response=get("countries");
-
         List<Country> allCountries=response.jsonPath().getList("items",Country.class);
         allCountries.forEach(System.out::println);
-
-
-
-
 
     }
 

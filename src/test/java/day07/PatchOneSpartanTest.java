@@ -34,7 +34,7 @@ public class PatchOneSpartanTest {
 
     @DisplayName("Patching 1 data with Java Object")
     @Test
-    public void testPath1DataPartialUpdateWithMAp(){
+    public void testPatch1DataPartialUpdateWithMAp(){
         //we just want to update the name and phone number
 
         Map<String,Object> patchBodyMap=new LinkedHashMap<>();
@@ -57,7 +57,7 @@ public class PatchOneSpartanTest {
 
     @DisplayName("Patching 1 data with Java Object")
     @Test
-    public void testPath1DataPartialUpdateWithPOJO(){
+    public void testPatch1DataPartialUpdateWithPOJO(){
         //we just want to  update the name and phone  number
 
         Spartan sp=new Spartan();//"B20 Voila","",9876543210L);

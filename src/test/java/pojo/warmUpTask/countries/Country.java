@@ -1,4 +1,4 @@
-package pojo.practice.countries;
+package pojo.warmUpTask.countries;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

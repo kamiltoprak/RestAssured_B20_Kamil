@@ -1,4 +1,4 @@
-package day07.practice.locations;
+package day07.warmUpTask.locations;
 
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -7,8 +7,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.practice.departments.Department;
-import pojo.practice.locations.Location;
+import pojo.warmUpTask.locations.Location;
 
 import java.util.List;
 
