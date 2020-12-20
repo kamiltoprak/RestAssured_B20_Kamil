@@ -1,4 +1,4 @@
-package Practice;
+package zSelfPractice;
 
 import java.util.ListIterator;
 import io.restassured.http.ContentType;
