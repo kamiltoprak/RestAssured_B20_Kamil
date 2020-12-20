@@ -2,17 +2,13 @@ package day10;
 
 
 
-import TestBase.HR_ORDS_TestBase;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pojo.ArticlePOJO;
-import pojo.Department;
-import TestBase.HR_ORDS_TestBase;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static io.restassured.RestAssured.*;

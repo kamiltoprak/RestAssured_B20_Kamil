@@ -1,11 +1,10 @@
 package day09;
 
-import TestBase.HR_ORDS_TestBase;
+import testbase.HR_ORDS_TestBase;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pojo.Department;
-import TestBase.HR_ORDS_TestBase;
 
 import java.util.ArrayList;
 import java.util.List;

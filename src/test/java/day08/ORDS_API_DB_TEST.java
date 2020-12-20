@@ -10,7 +10,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import TestBase.HR_ORDS_TestBase;
+import testbase.HR_ORDS_TestBase;
 
 
 public class ORDS_API_DB_TEST extends HR_ORDS_TestBase {

@@ -1,6 +1,6 @@
 package day07;
 
-import TestBase.HR_ORDS_TestBase;
+import testbase.HR_ORDS_TestBase;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;

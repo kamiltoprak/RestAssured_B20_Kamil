@@ -1,19 +1,16 @@
 package day09;
 
-import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pojo.Country;
-import pojo.Region;
 import utility.DB_Utility;
-import io.restassured.response.Response;
 
 import java.util.List;
 import java.util.Map;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import TestBase.HR_ORDS_TestBase;
+import testbase.HR_ORDS_TestBase;
 public class ORDS_API_DB_PracticeTest extends HR_ORDS_TestBase {
 
     @DisplayName("GET /countries/{country_id} Compare Resut with DB")
