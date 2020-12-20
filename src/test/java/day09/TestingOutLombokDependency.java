@@ -20,10 +20,10 @@ public class TestingOutLombokDependency extends HR_ORDS_TestBase {
         Department d = new Department();
         d.setDepartment_id(100);
         System.out.println( d.getDepartment_id() );
-
         Department d2
                 = new Department(100,"ABC",12,1700);
         System.out.println("d2 = " + d2);
+
     }
 
     @DisplayName("GET /departments and save List of POJO")
