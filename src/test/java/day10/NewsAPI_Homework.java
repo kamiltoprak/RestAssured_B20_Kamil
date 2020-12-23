@@ -1,19 +1,15 @@
 package day10;
 
-
-
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pojo.ArticlePOJO;
-
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.RestAssured.reset;
-
 
 public class NewsAPI_Homework {
 

@@ -50,17 +50,17 @@ public class SpartanWithReusableSpecForAdminRoleTest {
         given()
                 .spec(givenSpec)
                 .pathParam("id",34).
-                when()
+        when()
                 .get("/spartans/{id}").
-                then()
+        then()
                 .spec(thenSpec)
         ;
         // alternative way , since the data type of givenSpec is already a RequestSpecification
         givenSpec
                 .pathParam("id",34).
-                when()
+        when()
                 .get("/spartans/{id}").
-                then()
+        then()
                 .spec(thenSpec)
         ;
 
@@ -104,9 +104,9 @@ public class SpartanWithReusableSpecForAdminRoleTest {
         given()
                 .spec( postReqSpec )
                 .body(badPayload).
-                when()
+        when()
                 .post("/spartans").
-                then()
+        then()
                 .statusCode(400)
                 .body("errors",hasSize(3))
 //                .body("errors[0].defaultMessage",is("Gender should be either Male or Female"))

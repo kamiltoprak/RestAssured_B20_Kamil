@@ -17,9 +17,9 @@ public class JsonSchemaValidation extends SpartanAdminTestBase {
         given()
                 .spec(adminReqSpec)
                 .pathParam("id",34).
-                when()
+        when()
                 .get("/spartans/{id}").
-                then()
+        then()
                 .log().body()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("singleSpartanSchema.json") ) ;
