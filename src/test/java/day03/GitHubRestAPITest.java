@@ -23,9 +23,9 @@ public class GitHubRestAPITest {
 
         // provide  your  username as path variable in give section of  the  chain
         given()
-                .pathParam("blabla","kamiltoprak").
+                .pathParam("username","kamiltoprak").
         when()
-                .get("https://api.github.com/users/{blabla}").
+                .get("https://api.github.com/users/{username}").
         then()
                 .assertThat()
                 .statusCode(is(200))
